@@ -1,5 +1,5 @@
 import java.util.*;
-class seat{
+class seat of tarin{
     static Scanner scn = new Scanner(System.in);
     public static void main(String []args){
         int test = scn.nextInt();
