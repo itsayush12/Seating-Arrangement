@@ -1,0 +1,49 @@
+import java.util.*;
+class seat{
+    static Scanner scn = new Scanner(System.in);
+    public static void main(String []args){
+        int test = scn.nextInt();
+        while(test!=0){
+            int num = scn.nextInt();
+            int rem = num % 12;
+            if(rem==1){
+                num+= 11;
+                System.out.println(num + " " + "WS");
+            }else if(rem==2){
+                num+= 9;
+                System.out.println(num+ " " + "MS");
+            }else if(rem==3){
+                num+= 7;
+                System.out.println(num+ " " + "AS");
+            }else if(rem==4){
+                num+= 5;
+                System.out.println(num+ " " + "AS");
+            }else if(rem==5){
+                num+= 3;
+                System.out.println(num+ " "+"MS");
+            }else if(rem==6){
+                num+= 1;
+                System.out.println(num + " " + "WS");
+            }else if(rem==7){
+                num-=1;
+                System.out.println(num+ " " + "WS");
+            }else if(rem==8){
+                num-=3;
+                System.out.println(num+ " " + "MS");
+            }else if(rem==9){
+                num-=5;
+                System.out.println(num + " " + "AS");
+            }else if(rem==10){
+                num-=7;
+                System.out.println(num + " " + "AS");
+            }else if(rem==11){
+                num-=9;
+                System.out.println(num + " " + "MS");
+            }else{
+                num-= 11;
+                System.out.println(num + " " + "WS");
+            }
+            test--;
+        }
+    }
+}
